@@ -62,7 +62,7 @@ header .menu {
 
 main {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     grid-template-areas: 
     "article aside"
@@ -85,45 +85,70 @@ article {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 2px;
-    padding: 50px;
+    padding-left: 50px;
 }
 
 article h1 {
+    padding-top: 40px;
     font-size: 60px;
 }
 
 article h2 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    margin-right: 470px;
 }
 
-/*article .redondo {
+article .redondo {
     background-color: white;
+    color: #d12828;
+    padding: 2px 3px;
     border-radius: 50%;
-}*/
+}
 
 article p {
     font-family: 'Quicksand', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 100px;
 }
 
 aside {
-    padding: 50px;    
+    padding-left: 50px;    
     background-color: #d12828;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-area: aside;
 }
-aside p {
-    font-family: 'Quicksand', sans-serif;
+
+aside h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 500px;
+}
+
+aside .redondo {
+    background-color: white;
+    color: #d12828;
+    padding: 2px 5px;
+    border-radius: 50%;
 }
 
 aside img {
     width: 400px;
 }
 
-aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+aside p {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 27px;
+    margin-bottom: 27px;
+    margin-right: 280px;
 }
+
 
 main .link2 {
     height: 12vh;
@@ -135,9 +160,9 @@ main .link2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 40px;
     padding-left: 50px;
-    padding-right: 25px;   
+    padding-right: 55px;   
 }
 
 .links .link2 a{
@@ -158,6 +183,7 @@ main .links img {
 
 .map li{
     text-decoration: underline;
+    padding-left: 100px;
 }
 
 .links a {
