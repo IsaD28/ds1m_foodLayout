@@ -177,6 +177,10 @@ main .links img {
     background-color: #d12828;    
 }
 
+.links ul {
+    gap: 1px;
+}
+
 .links li {
     list-style: none;
 }
